@@ -186,7 +186,7 @@ app
 
         oauth2Service.loginUrl = authUrl + "/o/authorize/";
         //oauth2Service.oidcUrl = authUrl + "";
-        oauth2Service.redirectUri = "http://localhost:9003"; // si colocas, colocar tal cual está registrado en al app
+        oauth2Service.redirectUri = "https://evente-client-ng1.herokuapp.com"; // si colocas, colocar tal cual está registrado en al app http://localhost:9003
         console.log("location.origin=" + location.origin);
 
         oauth2Service.clientId = "rrAcmEKW34DitRKiX4On84LLWNBBkCjEOmpcjmL3";

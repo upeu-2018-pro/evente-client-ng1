@@ -119,7 +119,7 @@ app.run(function($rootScope, $state, $stateParams, $window) {
     menuService.menuUrl = "menu.json";
     $rootScope.menu = menuService.getMenu();
     oauth2Service.loginUrl = authUrl + "/o/authorize/";
-    oauth2Service.redirectUri = "http://localhost:9003";
+    oauth2Service.redirectUri = "https://evente-client-ng1.herokuapp.com";
     console.log("location.origin=" + location.origin);
     oauth2Service.clientId = "rrAcmEKW34DitRKiX4On84LLWNBBkCjEOmpcjmL3";
     oauth2Service.scope = "catalogo";
@@ -265,34 +265,6 @@ app.constant("ROUTERS", [ {
         templateUrl: "dist/views/autores/form.html"
     }
 } ]);
-
-app.config(function($translateProvider) {
-    $translateProvider.translations("en-us", {
-        HEADLINE: "XSS possible!",
-        PARAGRAPH: "Hello {{username}}!",
-        TITLE: "Hello",
-        "hola foo": "This is a paragraph.",
-        "en-us": "English",
-        "es-pe": "Spanish Peruvian"
-    });
-});
-
-app.config(function($translateProvider) {
-    $translateProvider.translations("es-pe", {
-        HEADLINE: "XSS possible!",
-        PARAGRAPH: "Hola es-pe {{username}}!",
-        TITLE: "Hola",
-        "hola foo": "This is a paragraph.",
-        "en-us": "Inglés",
-        "es-pe": "Español Perú",
-        categoria: "Categoría",
-        categorias: "Categorías",
-        "trabajar con": "Trabajar con",
-        codigo: "Código",
-        nombre: "Nombre",
-        estado: "Estado"
-    });
-});
 
 app.controller("AutorCtrl", function($scope, $state, $stateParams, catalogoService, $window, $mdDialog, $log, toastr, $filter) {
     $scope.fields = "nombre";
@@ -728,6 +700,34 @@ app.controller("BottomSheetExample", function($scope, $timeout, $mdBottomSheet, 
         $window.location = clickedItem.url;
         $mdBottomSheet.hide(clickedItem);
     };
+});
+
+app.config(function($translateProvider) {
+    $translateProvider.translations("en-us", {
+        HEADLINE: "XSS possible!",
+        PARAGRAPH: "Hello {{username}}!",
+        TITLE: "Hello",
+        "hola foo": "This is a paragraph.",
+        "en-us": "English",
+        "es-pe": "Spanish Peruvian"
+    });
+});
+
+app.config(function($translateProvider) {
+    $translateProvider.translations("es-pe", {
+        HEADLINE: "XSS possible!",
+        PARAGRAPH: "Hola es-pe {{username}}!",
+        TITLE: "Hola",
+        "hola foo": "This is a paragraph.",
+        "en-us": "Inglés",
+        "es-pe": "Español Perú",
+        categoria: "Categoría",
+        categorias: "Categorías",
+        "trabajar con": "Trabajar con",
+        codigo: "Código",
+        nombre: "Nombre",
+        estado: "Estado"
+    });
 });
 
 app.factory("catalogoService", function($resource, apiUrl) {
