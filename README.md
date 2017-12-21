@@ -91,7 +91,7 @@ Open browser http://localhost:9003
 ```
 
 4. Constantes opcionales de la app::
-```sh
+```js
 	// Página de inicio o de convergencia
 	app.constant("homeUrl", "http://localhost:9001"); 
 
@@ -99,7 +99,7 @@ Open browser http://localhost:9003
 
 
 5. config.js file setting like this::
-```sh
+```js
 	app
 		//====================================================
 		// oauth2Service and menuService runing
@@ -119,7 +119,7 @@ Open browser http://localhost:9003
 
 	    ...
 
-	if (oauth2Service.isAauthenticated()) { // reemplaza a oauth2Service.oidcUrl
+			if (oauth2Service.isAauthenticated()) { // reemplaza a oauth2Service.oidcUrl
                 userService.isAauth = 'true';
                 $http.get(authUrl + "/api-core/localuserinfo/").then(function (result) {
                     var claimsJson = result.data;
