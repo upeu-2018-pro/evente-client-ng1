@@ -119,7 +119,7 @@ Open browser http://localhost:9003
 
 	    ...
 
-			if (oauth2Service.isAauthenticated()) { // reemplaza a oauth2Service.oidcUrl
+		if (oauth2Service.isAauthenticated()) { // reemplaza a oauth2Service.oidcUrl
                 userService.isAauth = 'true';
                 $http.get(authUrl + "/api-core/localuserinfo/").then(function (result) {
                     var claimsJson = result.data;
