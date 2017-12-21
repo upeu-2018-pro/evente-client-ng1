@@ -1,7 +1,7 @@
 # evente-client-ng1
 
-evente-client-ng1 es un **Client application** construido en Angular 1 para consumir los servicios de [Evente resource server](https://github.com/upeu-2018-pro/evente-serve) autorizado por el [Evente resource server] mismo, aunque puede ser otra Authorization server y autenticado por [Google accounts server](https://accounts.google.com) cumpliendo así con una aplicación SSO.
-
+evente-client-ng1 es un **Client application** construido en Angular 1 para consumir los servicios de [Evente resource server] autorizado por el [Evente resource server] mismo, aunque puede ser otra Authorization server y autenticado por [Google accounts server](https://accounts.google.com) cumpliendo así con una aplicación SSO.
+[Evente resource server]: https://github.com/upeu-2018-pro/evente-serve
 
 
 ![Image 0](https://github.com/upeu-2018-pro/evente-client-ng1/blob/master/doc/e3-client_app_catalogo_web.png)
