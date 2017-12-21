@@ -10,7 +10,7 @@ evente-client-ng1 es un **Client application** construido en Angular 1 para cons
 
 
 
-## Ejecución en modo local 
+## Deployment to Localhost (1)
 
 Clone **latest development version** directly from [github]:
 
@@ -28,9 +28,9 @@ Runing :
 
 Open browser http://localhost:9004
 
-## Developing your tasks
+## Deployment to Localhost for developing your tasks (2)
 
-Pare el servidor de producción y ejecute el servidor web de desarrollo
+Parar el servidor de producción y ejecute el servidor web de desarrollo
 
 Runing el entorno de desarrollo:
 
@@ -116,9 +116,10 @@ Open browser http://localhost:9003
 
         oauth2Service.clientId = "rrAcmEKW34DitRKiX4On84LLWNBBkCjEOmpcjmL3";
         oauth2Service.scope = "catalogo"; //comentar si no está configurado
+
 	    ...
 
-		if (oauth2Service.isAauthenticated()) { // reemplaza a oauth2Service.oidcUrl
+	if (oauth2Service.isAauthenticated()) { // reemplaza a oauth2Service.oidcUrl
                 userService.isAauth = 'true';
                 $http.get(authUrl + "/api-core/localuserinfo/").then(function (result) {
                     var claimsJson = result.data;
@@ -126,10 +127,11 @@ Open browser http://localhost:9003
                 }, function (err) {
                 });
             }
+
 		...
 ```
 
-## Deployment to Heroku
+## Deployment to Heroku  (3)
 
 1 Si hizo cambios, hacer commit
 
