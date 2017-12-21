@@ -15,7 +15,6 @@ evente-client-ng1 es un **Client application** construido en Angular 1 para cons
 Clone **latest development version** directly from [github]:
 
 ```sh
-    # Universal
     
     D:\dev>git clone https://github.com/upeu-2018-pro/evente-client-ng1.git
 ```
@@ -23,8 +22,6 @@ Clone **latest development version** directly from [github]:
 Runing :
 
 ```sh
-    # Universal
-
     D:\dev>cd evente-client-ng1
     D:\dev\evente-client-ng1>npm start
 ```
@@ -34,13 +31,16 @@ Open browser http://localhost:9004
 ## Developing your tasks
 
 Pare el servidor de producción y ejecute el servidor web de desarrollo
-Run
+
+Runing el entorno de desarrollo:
+
 ```sh
 	D:\dev\catalogo-client-ng1_web>gulp
 
 	[23:28:59] Using gulpfile D:\dev\evente-client-ng1\gulpfile.js
 	...
 ```
+Open browser http://localhost:9003
 
 
 ### Revise las configuraciones
@@ -118,7 +118,7 @@ Run
         oauth2Service.scope = "catalogo"; //comentar si no está configurado
 	    ...
 
-			if (oauth2Service.isAauthenticated()) { // reemplaza a oauth2Service.oidcUrl
+		if (oauth2Service.isAauthenticated()) { // reemplaza a oauth2Service.oidcUrl
                 userService.isAauth = 'true';
                 $http.get(authUrl + "/api-core/localuserinfo/").then(function (result) {
                     var claimsJson = result.data;
@@ -131,16 +131,16 @@ Run
 
 ## Deployment to Heroku
 
-1. Si hizo cambios, hacer commit
+1 Si hizo cambios, hacer commit
 
     $ git add .
     $ git commit -m "Version to heroku"
 
-2. Revise la app en https://dashboard.heroku.com/apps, si aún no ha creado la app, ejecute
+2 Revise la app en https://dashboard.heroku.com/apps, si aún no ha creado la app, ejecute
 
     $ heroku create evente-client-ng1
 
-3. Deployar (sube los cambios del commit y deploya)
+3 Deployar (sube los cambios del commit y deploya)
 
     $ git push heroku master
 
@@ -150,15 +150,15 @@ See also, a [ready-made application](https://github.com/heroku/node-js-getting-s
 
 ## License
 
-MIT: [LICENSE](https://github.com/upeu-001-pro/evente-client-ng1/blob/master/LICENSE)
+MIT: [LICENSE](https://github.com/upeu-2018-pro/evente-client-ng1/blob/master/LICENSE)
 
 
 ### Contributors
 
 
-See https://github.com/upeu-001-pro/evente-client-ng1/graphs/contributors
+See https://github.com/upeu-2018-pro/evente-client-ng1/graphs/contributors
 
-[github]: https://github.com/upeu-001-pro/evente-client-ng1
+[github]: https://github.com/upeu-2018-pro/evente-client-ng1
 
 
 
