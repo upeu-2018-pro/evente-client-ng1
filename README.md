@@ -1,15 +1,14 @@
-# catalogo-client-ng1
+# evente-client-ng1
 
-catalogo-client-ng1 es un **Client application** construido en Angular para consumir los servicios de [Catalogo resource server] autorizado por el [Authorization server] cumpliendo así con una aplicación SSO.
-
-
-
-![Image of Yaktocat](https://github.com/upeu-001-pro/catalogo-client-ng1/blob/master/doc/e3-client_app_catalogo_web.png)
+evente-client-ng1 es un **Client application** construido en Angular 1 para consumir los servicios de [Evente resource server](https://github.com/upeu-2018-pro/evente-serve) autorizado por el [Evente resource server] mismo, aunque puede ser otra Authorization server y autenticado por [Google accounts server](https://accounts.google.com) cumpliendo así con una aplicación SSO.
 
 
 
+![Image 0](https://github.com/upeu-2018-pro/evente-client-ng1/blob/master/doc/e3-client_app_catalogo_web.png)
 
-## Installation en modo local 
+
+
+## Ejecución en modo local 
 
 ### Development version
 
@@ -19,7 +18,7 @@ Clone **latest development version** directly from [github]:
 ```sh
     # Universal
     
-    D:\dev>git clone https://github.com/upeu-001-pro/catalogo-client-ng1.git
+    D:\dev>git clone https://github.com/upeu-2018-pro/evente-client-ng1.git
 ```
 
 ## Deployment to Local
@@ -27,16 +26,16 @@ Clone **latest development version** directly from [github]:
 Instale las dependencias
 ```sh
     
-	D:\dev>cd catalogo-client-ng1
-	D:\dev\catalogo-client-ng1>npm install
-	D:\dev\catalogo-client-ng1>bower install
+	D:\dev>cd evente-client-ng1
+	D:\dev\evente-client-ng1>npm install
+	D:\dev\evente-client-ng1>bower install
 ```
 
 Run
 ```sh
 	D:\dev\catalogo-client-ng1_web>gulp
 
-	[23:28:59] Using gulpfile D:\dev\catalogo-client-ng1\gulpfile.js
+	[23:28:59] Using gulpfile D:\dev\evente-client-ng1\gulpfile.js
 	[23:28:59] Starting 'jshint'...
 	[23:28:59] Starting 'styles'...
 	styles
@@ -145,7 +144,7 @@ Run
 
 Si aún no ha creado su app, revise https://dashboard.heroku.com/apps
 
-    $ heroku create catalogo-client-ng1
+    $ heroku create evente-client-ng1
 
 deployar:
 
@@ -157,16 +156,15 @@ See also, a [ready-made application](https://github.com/heroku/node-js-getting-s
 
 ## License
 
-BSD-3-Clause: [LICENSE](https://github.com/upeu-001-pro/catalogo-client-ng1/blob/master/LICENSE)
+BSD-3-Clause: [LICENSE](https://github.com/upeu-001-pro/evente-client-ng1/blob/master/LICENSE)
 
 
 ### Contributors
 
 
-See https://github.com/upeu-001-pro/catalogo-client-ng1/graphs/contributors
+See https://github.com/upeu-001-pro/evente-client-ng1/graphs/contributors
 
-[github]: https://github.com/upeu-001-pro/catalogo-client-ng1
+[github]: https://github.com/upeu-001-pro/evente-client-ng1
 
 
-[Authorization server]:  https://github.com/upeu-001-pro/upeuauth-serve
-[Catalogo resource server]:  https://github.com/upeu-001-pro/catalogo-serve
+
